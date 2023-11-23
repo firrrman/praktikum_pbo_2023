@@ -1,0 +1,62 @@
+package tugas10;
+
+/**
+ * Anggota Kelompok : Firman Hakim, Ahmad Kabir Rifa'i, Muhammad Kemal Ma'ruf
+ * Kelas : Reguler D
+ * Deskripsi Program : program ini berisi program menampilkan 
+ * data Anggota Clan Akatsuki
+ */
+
+/**Ketentuan :
+ * Harus mengimplementasi konsep inheritance
+ * Harus mengimplementasi konsep polimorphism
+*/
+
+class DetectiveConan {
+	protected String nama;
+	protected String jenisKelamin;
+	
+	public DetectiveConan(String nama, String jenisKelamin) {
+		this.nama = nama;
+		this.jenisKelamin = jenisKelamin;
+	}
+	public void pasangan() {
+		System.out.println("Nama : "+nama);
+		System.out.println("Jenis Kelamin : "+jenisKelamin);
+	}	
+}
+class ShinichiKudo extends DetectiveConan {
+	private String pelajar;
+	public ShinichiKudo(String nama, String jenisKelamin, String pelajar) {
+		super(nama, jenisKelamin);
+		this.pelajar = pelajar;	
+	}
+	public void pasangan() {
+		super.pasangan();
+		System.out.println(pelajar);
+	}
+}
+class AiHabara extends DetectiveConan {
+	private String namaAsli;
+	public AiHabara(String nama, String jenisKelamin, String namaAsli) {
+		super(nama, jenisKelamin);
+		this.namaAsli = namaAsli;	
+	}
+	public void pasangan() {
+		super.pasangan();
+		System.out.println(namaAsli);
+	}
+}
+public class TesterDetectiveConan {
+	public static void main(String[] args) {
+		System.out.println("---DETECTIVE CONAN---");
+		System.out.println();
+		ShinichiKudo a = new ShinichiKudo("Shhinichi Kudo", "Laki Laki","Seorang Pelajar SMA Teitan");
+		AiHabara b = new AiHabara("Ai Habara", "Perempuan", "Nama Asli Shiho Miyano");
+		
+		
+		a.pasangan();
+		System.out.println();
+		
+	}
+}

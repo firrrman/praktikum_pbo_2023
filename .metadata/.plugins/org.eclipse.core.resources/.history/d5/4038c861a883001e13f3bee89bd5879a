@@ -1,0 +1,28 @@
+package Tugas;
+
+public class Tugas1 {
+	public int angka1;
+	public int angka2;
+	public int pertambahan;
+	public int perkurangan;
+	public int perkalian;
+	public int pembagian;
+
+    public Tugas1(int angka1, int angka2) {
+        angka1 = angka1;
+        angka2 = angka2;
+    }
+    public int pertambahan() {
+        return angka1 + angka2;
+    }
+    public int pengurangan() {
+        return angka1 - angka2;
+    }
+    public int perkalian() {
+        return angka1 * angka2;
+    }
+    public int pembagian() {
+        return angka1 / angka2;
+    }
+	
+}

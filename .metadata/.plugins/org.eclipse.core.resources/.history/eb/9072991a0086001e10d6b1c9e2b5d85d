@@ -1,0 +1,17 @@
+package tugas10;
+
+public class TesterVehicle {
+    public static void main(String[] args) {
+        Bicycle bicycle = new Bicycle();
+        bicycle.setBrand("Trek Bike");
+        bicycle.setModel("7.4FX");
+        bicycle.setGearCount(23);
+       
+
+        Skateboard skateboard = new Skateboard();
+        skateboard.setBrand("Ally Skate");
+        skateboard.setModel("Rocket");
+        skateboard.setBoardLength(54.5);
+        
+    }
+}

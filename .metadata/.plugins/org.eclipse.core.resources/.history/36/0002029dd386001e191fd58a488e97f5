@@ -1,0 +1,134 @@
+package tugas10;
+
+/**
+ * Anggota Kelompok : Firman Hakim, Ahmad Kabir Rifa'i, Muhammad Kemal Ma'ruf
+ * Kelas : Reguler D
+ * Deskripsi Program : program ini berisi program menampilkan 
+ * data Anggota Clan Akatsuki
+ */
+
+/**Ketentuan :
+ * Harus mengimplementasi konsep inheritance
+ * Harus mengimplementasi konsep polimorphism
+*/
+
+class DetectiveConan {
+	protected String nama;
+	protected String jenisKelamin;
+	
+	public DetectiveConan(String nama, String jenisKelamin) {
+		this.nama = nama;
+		this.jenisKelamin = jenisKelamin;
+	}
+	public void keterangan() {
+		System.out.println("Nama : "+nama);
+		System.out.println("Jenis Kelamin : "+jenisKelamin);
+	}	
+}
+class ShinichiKudo extends DetectiveConan {
+	private String pelajar;
+	public ShinichiKudo(String nama, String jenisKelamin, String pelajar) {
+		super(nama, jenisKelamin);
+		this.pelajar = pelajar;	
+	}
+	public void keterangan() {
+		super.keterangan();
+		System.out.println(pelajar);
+	}
+}
+class AiHabara extends DetectiveConan {
+	private String namaAsli;
+	public AiHabara(String nama, String jenisKelamin, String namaAsli) {
+		super(nama, jenisKelamin);
+		this.namaAsli = namaAsli;	
+	}
+	public void keterangan() {
+		super.keterangan();
+		System.out.println(namaAsli);
+	}
+}
+class MitsuhikoTsuburaya extends DetectiveConan {
+	private String hobi;
+	public MitsuhikoTsuburaya(String nama, String jenisKelamin, String hobi) {
+		super(nama, jenisKelamin);
+		this.hobi = hobi;	
+	}
+	public void keterangan() {
+		super.keterangan();
+		System.out.println(hobi);
+	}
+}
+class AyumiYoshida extends DetectiveConan {
+	private String detektif;
+	public AyumiYoshida(String nama, String jenisKelamin, String detektif) {
+		super(nama, jenisKelamin);
+		this.detektif = detektif;	
+	}
+	public void keterangan() {
+		super.keterangan();
+		System.out.println(detektif);
+	}
+}
+class GentaKojima extends DetectiveConan {
+	private String makan;
+	public GentaKojima(String nama, String jenisKelamin, String makan) {
+		super(nama, jenisKelamin);
+		this.makan = makan;	
+	}
+	public void keterangan() {
+		super.keterangan();
+		System.out.println(makan);
+	}
+}
+class HirosiAgasa extends DetectiveConan {
+	private String cerdas;
+	public HirosiAgasa(String nama, String jenisKelamin, String cerdas) {
+		super(nama, jenisKelamin);
+		this.cerdas = cerdas;	
+	}
+	public void keterangan() {
+		super.keterangan();
+		System.out.println(cerdas);
+	}
+}
+class EriKisaki extends DetectiveConan {
+	private String ibu;
+	public EriKisaki(String nama, String jenisKelamin, String ibu) {
+		super(nama, jenisKelamin);
+		this.ibu = ibu;	
+	}
+	public void keterangan() {
+		super.keterangan();
+		System.out.println(ibu);
+	}
+}
+public class TesterDetectiveConan {
+	public static void main(String[] args) {
+		System.out.println("---DETECTIVE CONAN---");
+		System.out.println();
+		ShinichiKudo a = new ShinichiKudo("Shhinichi Kudo", "Laki Laki","Seorang Pelajar SMA Teitan");
+		AiHabara b = new AiHabara("Ai Habara", "Perempuan", "Nama Asli Shiho Miyano");
+		MitsuhikoTsuburaya c = new MitsuhikoTsuburaya("Mitsuhiko Tsuburaya", "Laki Laki", "Senang Membaca Buku Sains");
+		AyumiYoshida d = new AyumiYoshida("Ayumi Yoshida", "Perempuan", "Anggota Detektif Cilik");
+		GentaKojima e = new GentaKojima("Genta Kojima", "Laki Laki", "Hobi Makan");
+		HirosiAgasa f = new HirosiAgasa("Hirosi Agasa", "Laki Laki", "Seorang Penemuan Yang Sangat Cerdas");
+		EriKisaki g = new EriKisaki("Eri Kisaki", "Perempuan", "Ibu dari Ran Mouri dan Seorang Pengacara");
+		
+		
+		a.keterangan();
+		System.out.println();
+		b.keterangan();
+		System.out.println();
+		c.keterangan();
+		System.out.println();
+		d.keterangan();
+		System.out.println();
+		e.keterangan();
+		System.out.println();
+		f.keterangan();
+		System.out.println();
+		g.keterangan();
+		System.out.println();
+		
+	}
+}

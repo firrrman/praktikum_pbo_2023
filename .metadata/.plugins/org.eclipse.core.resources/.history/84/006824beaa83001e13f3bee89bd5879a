@@ -1,0 +1,57 @@
+package Tugas;
+import java.util.Scanner;
+
+public class TestTugas1{
+public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("NAMA : FIRMAN HAKIM");
+        System.out.println("KELAS : REGULER D");
+        System.out.println("NPM : 221106042873");
+        System.out.println("");
+        System.out.println("----TUGAS PRAKTIKUM PBO----");
+        System.out.println("");
+
+        Tugas1 tugas1 = new Tugas1();
+
+        System.out.println("--PERTAMBAHAN--");
+        System.out.print("Masukan Angka 1 : ");
+        int angka1 = input.nextInt();
+        System.out.print("Masukan Angka 2 : ");
+        int angka2 = input.nextInt();
+        tugas1.angka1 = angka1;
+        tugas1.angka2 = angka2;
+        System.out.println("Hasilnya adalah : " + tugas1.tambah());
+        System.out.println("");
+
+        System.out.println("--PENGURANGAN--");
+        System.out.print("Masukan Angka 1 : ");
+        int angka11 = input.nextInt();
+        System.out.print("Masukan Angka 2 : ");
+        int angka22 = input.nextInt();
+        tugas1.angka1 = angka11;
+        tugas1.angka2 = angka22;
+        System.out.println("Hasilnya adalah : " + tugas1.kurang());
+        System.out.println("");
+
+        System.out.println("--PERKALIAN--");
+        System.out.print("Masukan Angka 1 : ");
+        int angka111 = input.nextInt();
+        System.out.print("Masukan Angka 2 : ");
+        int angka222 = input.nextInt();
+        tugas1.angka1 = angka111;
+        tugas1.angka2 = angka222;
+        System.out.println("Hasilnya adalah : " + tugas1.kali());
+        System.out.println("");
+
+        System.out.println("--PEMBAGIAN--");
+        System.out.print("Masukan Angka 1 : ");
+        int angka1111 = input.nextInt();
+        System.out.print("Masukan Angka 2 : ");
+        int angka2222 = input.nextInt();
+        tugas1.angka1 = angka1111;
+        tugas1.angka2 = angka2222;
+        System.out.println("Hasilnya adalah : " + tugas1.bagi());
+        System.out.println("");
+    }
+}

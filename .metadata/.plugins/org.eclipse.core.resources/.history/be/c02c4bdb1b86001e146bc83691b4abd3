@@ -1,0 +1,63 @@
+package tugas10;
+
+class Bilangan {
+    private int x;
+    private int y;
+
+    // Constructor with default values
+    public Bilangan() {
+        this.x = 3;
+        this.y = 4;
+    }
+
+    public int getX() {
+        return x;
+    }
+
+    public int getY() {
+        return y;
+    }
+}
+
+class JumlahBilangan extends Bilangan {
+    public JumlahBilangan() {
+        // Default constructor
+    }
+
+    public JumlahBilangan(int x, int y) {
+        // Call the constructor of the superclass (Bilangan) to set values for x and y
+        super(x, y);
+    }
+
+    public void tampilHasilJumlah() {
+        int hasilJumlah = getX() + getY();
+        System.out.println("Hasil Jumlah: " + hasilJumlah);
+    }
+}
+
+class SelisihBilangan extends Bilangan {
+    public SelisihBilangan() {
+        // Default constructor
+    }
+
+    public SelisihBilangan(int x, int y) {
+        // Call the constructor of the superclass (Bilangan) to set values for x and y
+        super(x, y);
+    }
+
+    public void tampilSelisih() {
+        int selisih = getX() - getY();
+        System.out.println("Selisih: " + selisih);
+    }
+}
+
+public class TesterBilangan {
+    public static void main(String[] args) {
+        // Example usage
+        JumlahBilangan jumlahBilangan = new JumlahBilangan(); // Using the default constructor with default values
+        jumlahBilangan.tampilHasilJumlah();
+
+        SelisihBilangan selisihBilangan = new SelisihBilangan(); // Using the default constructor with default values
+        selisihBilangan.tampilSelisih();
+    }
+}

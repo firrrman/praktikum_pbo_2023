@@ -1,0 +1,25 @@
+package Tugas;
+
+import java.util.Scanner;
+
+public class Tugas1{
+	public int angka1;
+	public int angka2;
+	
+    public Tugas1(int angka, int angkaa) {
+    	angka = angka1;
+    	angkaa = angka2;
+    }
+	public int tambah() {
+		return angka1 + angka2;
+	}
+	public int kurang() {
+		return angka1 - angka2;
+	}
+	public int kali() {
+		return angka1 * angka2;
+	}
+	public int bagi() {
+		return angka1 / angka2;
+	}
+}

@@ -1,0 +1,78 @@
+package tugas10;
+
+/**
+ * Anggota Kelompok : Firman Hakim, Ahmad Kabir Rifa'i, Muhammad Kemal Ma'ruf
+ * Kelas : Reguler D
+ * Deskripsi Program : program ini berisi program menampilkan 
+ * data Anggota Clan Akatsuki
+ */
+
+/**Ketentuan :
+ * Harus mengimplementasi konsep inheritance
+ * Harus mengimplementasi konsep polimorphism
+*/
+
+class DetectiveConan {
+	protected String nama;
+	protected String jenisKelamin;
+	
+	public DetectiveConan(String nama, String jenisKelamin) {
+		this.nama = nama;
+		this.jenisKelamin = jenisKelamin;
+	}
+	public void keterangan() {
+		System.out.println("Nama : "+nama);
+		System.out.println("Jenis Kelamin : "+jenisKelamin);
+	}	
+}
+class ShinichiKudo extends DetectiveConan {
+	private String pelajar;
+	public ShinichiKudo(String nama, String jenisKelamin, String pelajar) {
+		super(nama, jenisKelamin);
+		this.pelajar = pelajar;	
+	}
+	public void keterangan() {
+		super.keterangan();
+		System.out.println(pelajar);
+	}
+}
+class AiHabara extends DetectiveConan {
+	private String namaAsli;
+	public AiHabara(String nama, String jenisKelamin, String namaAsli) {
+		super(nama, jenisKelamin);
+		this.namaAsli = namaAsli;	
+	}
+	public void keterangan() {
+		super.keterangan();
+		System.out.println(namaAsli);
+	}
+}
+class MitsuhikoTsuburaya extends DetectiveConan {
+	private String hobi;
+	public MitsuhikoTsuburaya(String nama, String jenisKelamin, String hobi) {
+		super(nama, jenisKelamin);
+		this.hobi = hobi;	
+	}
+	public void keterangan() {
+		super.keterangan();
+		System.out.println(hobi);
+	}
+}
+public class TesterDetectiveConan {
+	public static void main(String[] args) {
+		System.out.println("---DETECTIVE CONAN---");
+		System.out.println();
+		ShinichiKudo a = new ShinichiKudo("Shhinichi Kudo", "Laki Laki","Seorang Pelajar SMA Teitan");
+		AiHabara b = new AiHabara("Ai Habara", "Perempuan", "Nama Asli Shiho Miyano");
+		MitsuhikoTsuburaya c = new MitsuhikoTsuburaya("Mitsuhiko Tsuburaya", "Laki Laki", "Membaca Buku Sains");
+		
+		
+		a.keterangan();
+		System.out.println();
+		b.keterangan();
+		System.out.println();
+		c.keterangan();
+		System.out.println();
+		
+	}
+}

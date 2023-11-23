@@ -1,0 +1,78 @@
+package tugas10;
+
+class Vehicle {
+    private String brand;
+    private String model;
+
+    public Vehicle() {
+    }
+
+    public String getBrand() {
+        return brand;
+    }
+
+    public void setBrand(String brand) {
+        this.brand = brand;
+    }
+
+    public String getModel() {
+        return model;
+    }
+
+    public void setModel(String model) {
+        this.model = model;
+    }
+}
+
+class Bicycle extends Vehicle {
+    private int gearCount;
+
+    public Bicycle(String brand, String model, int gearCount) {
+        setBrand(brand);
+        setModel(model);
+        this.gearCount = gearCount;
+    }
+
+    public int getGearCount() {
+        return gearCount;
+    }
+
+    public void setGearCount(int gearCount) {
+        this.gearCount = gearCount;
+    }
+}
+
+class Skateboard extends Vehicle {
+    private double boardLength;
+
+    public Skateboard(String brand, String model, double boardLength) {
+        setBrand(brand);
+        setModel(model);
+        this.boardLength = boardLength;
+    }
+
+    public double getBoardLength() {
+        return boardLength;
+    }
+
+    public void setBoardLength(double boardLength) {
+        this.boardLength = boardLength;
+    }
+}
+
+public class TesterVehicle {
+    public static void main(String[] args) {
+        Bicycle bicycle = new Bicycle("Trek Bike", "7.4FX", 23);
+        System.out.print("Bicycle ");
+        System.out.print("Brand: " + bicycle.getBrand() + " ");
+        System.out.print("Model: " + bicycle.getModel() + " ");
+        System.out.print("Number of Gears: " + bicycle.getGearCount());
+        System.out.println();
+
+        Skateboard skateboard = new Skateboard("Ally skate", "Rocket", 54.5);
+        System.out.print("Skateboard ");
+        System.out.print("Brand: " + skateboard.getBrand() + " ");
+        System.out.print("Model: " + skateboard.getModel() + " ");
+        System.out.print("Board Length: " + skateboard.getBoardLength());
+    }
+}

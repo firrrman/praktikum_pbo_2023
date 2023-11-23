@@ -1,0 +1,18 @@
+package tugas10;
+
+public class TesterVehicle {
+    public static void main(String[] args) {
+        Bicycle bicycle = new Bicycle("Trek Bike", "7.4FX", 23);
+        System.out.println("Bicycle ");
+        System.out.println("Brand: " + bicycle.getBrand() + " ");
+        System.out.println("Model: " + bicycle.getModel() + " ");
+        System.out.println("Number of Gears: " + bicycle.getGearCount());
+        System.out.println();
+
+        Skateboard skateboard = new Skateboard("Ally skate", "rocket", 54.5);
+        System.out.println("Skateboard ");
+        System.out.println("Brand: " + skateboard.getBrand() + " ");
+        System.out.println("Model: " + skateboard.getModel() + " ");
+        System.out.println("Board Length: " + skateboard.getBoardLength());
+    }
+}
